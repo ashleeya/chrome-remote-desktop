@@ -11,6 +11,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 /opt/google/chrome-remote-desktop/chrome-remote-desktop --stop
 ###
 sudo vim /opt/google/chrome-remote-desktop/chrome-remote-desktop
+```
 "def launch_session(self, server_args, backoff_time):
     """"""Launches process required for session and records the backoff time
     for inhibitors so that process restarts are not attempted again until
@@ -27,5 +28,4 @@ sudo vim /opt/google/chrome-remote-desktop/chrome-remote-desktop
                                       backoff_time)
     self.session_inhibitor.record_started(MINIMUM_PROCESS_LIFETIME,
                                      backoff_time)
-
-"
+```
