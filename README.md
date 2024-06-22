@@ -23,8 +23,8 @@ FIRST_X_DISPLAY_NUMBER = 0  #change 20 to 0
 ```
 
 
+Disable 2 line
 ```
- #disable these line
 #while os.path.exists(X_LOCK_FILE_TEMPLATE % display):
 # display += 1
 ```
@@ -46,4 +46,9 @@ FIRST_X_DISPLAY_NUMBER = 0  #change 20 to 0
                                       backoff_time)
     self.session_inhibitor.record_started(MINIMUM_PROCESS_LIFETIME,
                                      backoff_time)
+```
+
+3. Start the service
+```
+/opt/google/chrome-remote-desktop/chrome-remote-desktop --start
 ```
