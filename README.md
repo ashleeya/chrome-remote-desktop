@@ -8,18 +8,26 @@ website: https://remotedesktop.google.com/
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
-test
+
 2. Stop Sevice of Chrome Remote Desktop
+```
 /opt/google/chrome-remote-desktop/chrome-remote-desktop --stop
+```
+
 ###
+
 sudo vim /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
-```FIRST_X_DISPLAY_NUMBER = 0 #change 20 to 0```
+```
+FIRST_X_DISPLAY_NUMBER = 0  #change 20 to 0
+```
 
 
-```#disable these line
+```
+ #disable these line
 #while os.path.exists(X_LOCK_FILE_TEMPLATE % display):
-# display += 1```
+# display += 1
+```
 
 ```
 "def launch_session(self, server_args, backoff_time):
