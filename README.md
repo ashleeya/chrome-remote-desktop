@@ -11,7 +11,6 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 2. Stop Sevice of Chrome Remote Desktop
 ```
-~~(old version) /opt/google/chrome-remote-desktop/chrome-remote-desktop --stop~~
 **(new on ubuntu24.04) sudo systemctl stop chrome-remote-desktop@$USER**
 ```
 
@@ -53,17 +52,17 @@ Disable 2 line
 ```
 sudo apt install kde-plasma-desktop 
 ```
-Edit Chrome Remote Desktop Session Configuration:
+4. Edit Chrome Remote Desktop Session Configuration:
 Open the Chrome Remote Desktop session file:
 ```
-sudo nano /etc/chrome-remote-desktop-session
+sudo vim /etc/chrome-remote-desktop-session
 ```
 Set KDE Plasma as the Session: Modify the file to start the KDE Plasma session by adding this line:
 ```
 exec /usr/bin/startplasma-x11
 ```
-4. Start the service
-~~(old version) /opt/google/chrome-remote-desktop/chrome-remote-desktop --start~~
+5. Start the service
+
 ```
 sudo systemctl start chrome-remote-desktop@$USER #kubuntu 24.04
 ```
