@@ -1,4 +1,4 @@
-**Ubuntu 22.04 + Chrome Remote Desktop**
+**Ubuntu 24.04 + Chrome Remote Desktop**
 
 I just want to log in with the main screen, not the extended screen. So, record the modified file for the next update.
 
