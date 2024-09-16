@@ -63,9 +63,7 @@ Set KDE Plasma as the Session: Modify the file to start the KDE Plasma session b
 exec /usr/bin/startplasma-x11
 ```
 4. Start the service
-```
 ~~(old version) /opt/google/chrome-remote-desktop/chrome-remote-desktop --start~~
 ```
-```
-**(new on ubuntu24.04) sudo systemctl start chrome-remote-desktop@$USER**
+sudo systemctl start chrome-remote-desktop@$USER #kubuntu 24.04
 ```
