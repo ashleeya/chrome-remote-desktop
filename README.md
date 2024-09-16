@@ -64,10 +64,8 @@ exec /usr/bin/startplasma-x11
 ```
 4. Start the service
 ```
-~~
-(old version) /opt/google/chrome-remote-desktop/chrome-remote-desktop --start
-~~
-**
-(new on ubuntu24.04) sudo systemctl start chrome-remote-desktop@$USER
-**
+~~(old version) /opt/google/chrome-remote-desktop/chrome-remote-desktop --start~~
+```
+```
+**(new on ubuntu24.04) sudo systemctl start chrome-remote-desktop@$USER**
 ```
